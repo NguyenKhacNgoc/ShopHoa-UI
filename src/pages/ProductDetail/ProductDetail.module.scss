@@ -1,0 +1,52 @@
+.detail-product-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.detail-product-item-name{
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+
+}
+.detail-product-item-description{
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--text-color);
+    line-height: 1.2;
+
+}
+.quantity{
+    font-size: 1.6rem;
+    color: var(--text-color);
+
+}
+.detail-product-item-price{
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+
+}
+
+.form-addtocart{
+    margin-top: 50px;
+    
+}
+.form-addtocart form{
+    display: flex;
+    align-items: center;
+
+}
+.quantity label{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.quantity input{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    width: 45px;
+}
+.buttons input{
+    margin-left: 100px;
+    width: 150px;
+}

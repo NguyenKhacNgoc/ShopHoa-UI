@@ -1,0 +1,48 @@
+.header{
+    height: var(--header-height);
+    background-color: var(--primary-color);
+}
+.header__navbar{
+    height: var(--navbar-height);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-item{
+    height: var(--header-item);
+    display: flex;
+    align-items: center;
+
+}
+.header-menu{
+    height: var(--header-menu);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.header-logo{
+    width: 150px;
+
+}
+.logo-img{
+    width: 50px;
+}
+
+
+.header-cart{
+    width: 140px;
+    text-align: center;
+}
+.cart-button {
+    background-color: #87bdd8;
+    border: none;
+    outline: none;
+}
+.cart-button:hover{
+    cursor: pointer;
+}
+
+

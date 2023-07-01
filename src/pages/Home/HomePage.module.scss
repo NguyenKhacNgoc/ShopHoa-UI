@@ -1,0 +1,49 @@
+.heading-intro{
+    font-size: 2rem;
+}
+.grid__column-4{
+    margin-top: 5px;
+    
+    text-align: center;
+}
+.grid__column-4{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: 33.3334%;
+
+}
+.grid__column-4 p{
+    font-size: 1.8rem;
+    display: block;
+    color: var(--text-color);
+    line-height: 1.5;
+
+}
+.grid__column-4 img{
+    width: 50px;
+    
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+}
+.banner img{
+    width: 100%;
+    display: block;
+}
+.banner .banner-content{
+    position: absolute;
+    text-align: center;
+    color: var(--text-color);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner h1{
+    font-size: 2.4rem;
+}
+.banner p{
+    font-size: 2rem;
+    line-height: 1.5;
+}

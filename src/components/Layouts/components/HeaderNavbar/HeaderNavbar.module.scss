@@ -1,0 +1,27 @@
+.header__navbar-list{
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0 0;
+}
+.header__navbar-item, header__navbar-item-link{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 550;
+    margin: 0 10px;
+    
+    
+    
+}
+.header__navbar-item-link{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+
+}
+.header__navbar-item-link:hover{
+    cursor: pointer;
+    color: var(--primary-btn-color);
+    
+
+}
