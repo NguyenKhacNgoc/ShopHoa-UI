@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles)
 
 function Search() {
@@ -32,14 +33,15 @@ function Search() {
 			    </button>
             )}
 			
-			<button 
+			<Link 
+                to={`/searchresults/${searchInput}`}
                 className={cx('header-search-btn')}
                 style={{
                     color: searchInput? '#333': '#a5a5a5 '
                 }}
                 >
 				<FontAwesomeIcon icon={faMagnifyingGlass} />
-			</button>
+			</Link>
 		</div>
 
     )
