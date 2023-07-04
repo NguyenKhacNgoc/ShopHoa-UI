@@ -10,7 +10,7 @@ function HeaderMenu() {
     useEffect(() => {
         const fetchData = async () => {
             try{
-                const response = await axios.get('http://localhost:8080/api/getcategory')
+                const response = await axios.get('https://ngoc-dep-trai-qua.onrender.com//api/getcategory')
                 setGetCategories(response.data)
 
             }catch(error){

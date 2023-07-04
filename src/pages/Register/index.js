@@ -31,7 +31,7 @@ function RegisterModal({isOpen, onClose}) {
             password: password
         }
         try{
-            const response = await axios.post('http://localhost:8080/api/auth/register', user)
+            const response = await axios.post('https://ngoc-dep-trai-qua.onrender.com/api/auth/register', user)
             window.location.href = ('/')
 
         } catch (error){

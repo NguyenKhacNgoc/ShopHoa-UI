@@ -16,7 +16,7 @@ function Upload() {
         formData.append('category', category);
         formData.append('images', images);
         try{
-            const response = await axios.post('http://localhost:8080/api/admin/addproduct', formData, {
+            const response = await axios.post('https://ngoc-dep-trai-qua.onrender.com/api/admin/addproduct', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                   }

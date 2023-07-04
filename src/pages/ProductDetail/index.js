@@ -16,7 +16,7 @@ function ProductDetail() {
     useEffect(() => {
         const fetchProduct = async() => {
             try{
-                const response = await axios.get(`http://localhost:8080/api/productdetail/${productID}`)
+                const response = await axios.get(`https://ngoc-dep-trai-qua.onrender.com//api/productdetail/${productID}`)
                 setProductdetail(response.data)
                 
             }catch(error){
@@ -40,7 +40,7 @@ function ProductDetail() {
                 quantity: quantity
             }
             try{
-                const response = await axios.post('http://localhost:8080/api/addtocart', request)
+                const response = await axios.post('https://ngoc-dep-trai-qua.onrender.com/api/addtocart', request)
                 alert(response.data)
     
             }catch(error){

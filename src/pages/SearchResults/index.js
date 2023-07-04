@@ -10,7 +10,7 @@ function Searchresults() {
 	useEffect(() => {
 		const fetchData = async () => {
 			try{
-				const response = await axios.get(`http://localhost:8080/api/searchresults/${inputSearch}`)
+				const response = await axios.get(`https://ngoc-dep-trai-qua.onrender.com/api/searchresults/${inputSearch}`)
 				setProducts(response.data)
 			}catch(error){
 				console.log(error)

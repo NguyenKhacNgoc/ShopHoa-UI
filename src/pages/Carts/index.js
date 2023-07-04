@@ -10,7 +10,7 @@ function Carts() {
         const fetchData = async () => {
             
             try{
-                const response = await axios.get(`http://localhost:8080/api/carts?userid=${userID}`)
+                const response = await axios.get(`https://ngoc-dep-trai-qua.onrender.com//api/carts?userid=${userID}`)
                 setCarts(response.data)
 
 
@@ -30,7 +30,7 @@ function Carts() {
 
     const UpdateQuantity = async(cartID, newQuantity) => {
         try{
-            const response = await axios.put('http://localhost:8080/api/updatecart', {
+            const response = await axios.put('https://ngoc-dep-trai-qua.onrender.com//api/updatecart', {
                 cartID: cartID,
                 quantity: newQuantity
             })
@@ -52,7 +52,7 @@ function Carts() {
     }
     const handleDelete = async(cartID) => {
         try{
-            const response = await axios.delete(`http://localhost:8080/api/deletecart?cartid=${cartID}`)
+            const response = await axios.delete(`https://ngoc-dep-trai-qua.onrender.com//api/deletecart?cartid=${cartID}`)
             //update carts
             const updateCart = carts.filter(cart => cart.id !== cartID)
             console.log(response.data)

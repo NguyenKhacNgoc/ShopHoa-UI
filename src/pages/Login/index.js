@@ -30,7 +30,7 @@ function LoginModal({isOpen, onClose}) {
             password: password
         }
         try{
-            const response = await axios.post('http://localhost:8080/api/auth/login', user)
+            const response = await axios.post('https://ngoc-dep-trai-qua.onrender.com/api/auth/login', user)
             localStorage.setItem('loggedInUser', JSON.stringify(response.data))
             console.log(response.data)
             window.location.href = "/"

@@ -11,7 +11,7 @@ function Products() {
 	useEffect(() => {
 		const fetchData = async () => {
 			try{
-				const response = await axios.get(`http://localhost:8080/api/product/${category}?sorted=${sorted}`)
+				const response = await axios.get(`https://ngoc-dep-trai-qua.onrender.com/api/product/${category}?sorted=${sorted}`)
 				setProducts(response.data)
 			}catch(error){
 				console.log(error)
